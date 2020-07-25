@@ -31,17 +31,17 @@ otherlang:
 To treat PuTTY, mintty and others as ‘console applications’.
 </h2>
 
-Simplifying, the ‘console application’ is an executable which
-interacts with user via data input/output (mainly text). ‘Console
+Simplifying, a ‘console application’ is an executable which
+interacts with user via data input/output (mainly text). A ‘Console
 application’ is not able to ‘draw’ anything, it has not graphical
 interface at all. It works with input/output streams only
 (redirection, pipes, magic symbols `<`, `>`, `|`).
 
     cmd /? > cmd.log & type cmd.log | find "HKEY"
 
-When ‘console application’ starts in Windows the special console
-window is created and that very window do all text drawing, which
-‘console application’ was printed, and that window redirects user
+When a ‘console application’ starts in Windows the special console
+window is created and that very window does all text drawing, which
+‘console application’ has printed, and that window redirects user
 keypresses into ‘console application’ input buffer. This console
 window is often called (local) terminal.
 
@@ -64,7 +64,7 @@ To name standard Windows console - ‘cmd.exe’.
 Windows has its own terminal (or ‘console window’) which is often
 erroneously called ‘cmd.exe’. Just press Win+R and run, for example,
 "powershell.exe". You will not see "cmd.exe" in the started process
-tree. In different Windows versions different executables create
-console window, just now it is "conhost.exe".
+tree. In older versions of Windows versions different executables create a
+console window. For Windows 7 or higher it is "conhost.exe".
 
 Not ‘cmd.exe’, just a ‘console’!
